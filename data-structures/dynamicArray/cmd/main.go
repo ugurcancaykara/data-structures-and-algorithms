@@ -47,7 +47,7 @@ func (d *DynamicArray) popback() int {
 		d.size -= 1
 		return lastElement
 	}
-
+	return -1
 }
 
 func (d *DynamicArray) resize() {
