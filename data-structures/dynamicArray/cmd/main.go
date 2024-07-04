@@ -3,7 +3,16 @@ package main
 import "fmt"
 
 func main() {
-
+	da := NewDynamicArray()
+	fmt.Println(da.getCapacity()) // Outputs 2
+	da.pushback(10)
+	fmt.Println(da.getCapacity()) // Outputs 2
+	da.pushback(20)
+	da.pushback(30)
+	da.pushback(40)
+	fmt.Println(da.getCapacity()) // Outputs 4 (automatically resized)
+	fmt.Println(da.popback())     // Outputs 40
+	fmt.Println(da.getSize())     // Outputs 3
 }
 
 func NewDynamicArray() *DynamicArray {
