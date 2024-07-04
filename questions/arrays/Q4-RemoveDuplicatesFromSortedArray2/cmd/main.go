@@ -47,7 +47,7 @@ func removeDuplicates(nums *[]int) int {
 //		}
 //
 //		for i := 0; i < min(2, count); i++ {
-//			nums[l] = nums[r]
+//			nums[l] = nums[r]`
 //			l++
 //		}
 //
@@ -57,7 +57,7 @@ func removeDuplicates(nums *[]int) int {
 //}
 //
 //func min(a, b int) int {
-//	if a < b {
+//	if a < b` {
 //		return a
 //	}
 //	return b
